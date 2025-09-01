@@ -1,21 +1,21 @@
 project:
   type: website
-  render:
+  render: # Add HERE new chapters (but not the interactive qmd files)
     - index.qmd
     - chapters/chapter1.qmd
 
 website:
   page-navigation: true
   title: "Introduction to `ggplot2`"
-  site-url: "https://github.com/InseeFrLab/AIML4OS-template-quarto-r"
-  repo-url: "https://github.com/InseeFrLab/AIML4OS-template-quarto-r"
+  site-url: "https://github.com/AIML4OS/AIML4OS-template-quarto-r"
+  repo-url: "https://github.com/AIML4OS/AIML4OS-template-quarto-r"
   repo-actions: [edit, source, issue]
   # favicon: images/Template2.png
   sidebar:
     logo: resources/profile/main3.png
     style: "docked"
     search: true
-    contents:
+    contents: # Add HERE new chapters (but not the interactive qmd files)
       - href: index.qmd
         text: Introduction
       - href: chapters/chapter1.qmd
