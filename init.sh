@@ -9,4 +9,4 @@ echo /home/onyxia/work/$MY_REPO
 sh $MY_REPO/sspcloud/restore_environment.sh
 
 # Download data
-sh $MY_REPO/sspcloud/ddownload_data.sh
+sh $MY_REPO/sspcloud/download_data.sh
