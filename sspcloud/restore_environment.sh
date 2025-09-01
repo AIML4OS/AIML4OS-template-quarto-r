@@ -1,8 +1,13 @@
 #!/bin/bash
 echo "Executing the restore_environment.sh script"
 
+# GOing into the Git repo
+cd ${MY_REPO}
+
+echo $(pwd)
+
 # Install all dependencies in the system folder
-Rscript -e "setwd('/home/onyxia/work/${MY_REPO}')" -e "getwd()"
-Rscript -e "getwd()"
-Rscript -e "print('renv.lock' %in% list.files())"
-Rscript -e 'renv::restore()'
+Rscript restore_environment.R
+
+# Come back to home
+cd ..
