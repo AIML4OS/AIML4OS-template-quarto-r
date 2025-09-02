@@ -50,6 +50,6 @@ dependencies = [
     { name = "vctrs", repository = "CRAN" },
     { name = "viridisLite", repository = "CRAN" },
     { name = "withr", repository = "CRAN" },
-    { name = "xfun", repository = "CRAN" }
+    { name = "xfun", repository = "CRAN" },
     { name = "yaml", repository = "CRAN" }
 ]
