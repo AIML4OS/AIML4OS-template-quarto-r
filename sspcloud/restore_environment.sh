@@ -1,13 +1,16 @@
 #!/bin/bash
 echo "Executing the restore_environment.sh script"
 
-# GOing into the Git repo
+# Installing rv
+curl -sSL https://raw.githubusercontent.com/A2-ai/rv/refs/heads/main/scripts/install.sh | bash
+
+# Going into the Git repo
 cd ${MY_REPO}
 
 echo $(pwd)
 
 # Install all dependencies in the system folder
-Rscript sspcloud/restore_environment.R
+rv sync
 
 # Come back to home
 cd ..
