@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Executing the download_notebook.sh script"
+echo "Executing the download_data.sh script"
 
 # Download a data file stored on S3 and store it in the work/data folder
 # This folder might not be the best choice, depending on your project
