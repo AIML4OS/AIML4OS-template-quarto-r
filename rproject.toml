@@ -1,0 +1,55 @@
+# this config was migrated from renv.lock on 2025-09-02
+[project]
+name = "/home/onyxia/work/AIML4OS-template-quarto-r"
+r_version = "4.5"
+
+repositories = [
+    { alias = "CRAN", url = "https://packagemanager.posit.co/cran/latest"}
+]
+
+dependencies = [
+    { name = "R6", repository = "CRAN" },
+    { name = "RColorBrewer", repository = "CRAN" },
+    { name = "base64enc", repository = "CRAN" },
+    { name = "bslib", repository = "CRAN" },
+    { name = "cachem", repository = "CRAN" },
+    { name = "cli", repository = "CRAN" },
+    { name = "digest", repository = "CRAN" },
+    { name = "dplyr", repository = "CRAN" },
+    { name = "evaluate", repository = "CRAN" },
+    { name = "farver", repository = "CRAN" },
+    { name = "fastmap", repository = "CRAN" },
+    { name = "fontawesome", repository = "CRAN" },
+    { name = "fs", repository = "CRAN" },
+    { name = "generics", repository = "CRAN" },
+    { name = "ggplot2", repository = "CRAN" },
+    { name = "glue", repository = "CRAN" },
+    { name = "gtable", repository = "CRAN" },
+    { name = "highr", repository = "CRAN" },
+    { name = "htmltools", repository = "CRAN" },
+    { name = "isoband", repository = "CRAN" },
+    { name = "jquerylib", repository = "CRAN" },
+    { name = "jsonlite", repository = "CRAN" },
+    { name = "knitr", repository = "CRAN" },
+    { name = "labeling", repository = "CRAN" },
+    { name = "lifecycle", repository = "CRAN" },
+    { name = "magrittr", repository = "CRAN" },
+    { name = "memoise", repository = "CRAN" },
+    { name = "mime", repository = "CRAN" },
+    { name = "pillar", repository = "CRAN" },
+    { name = "pkgconfig", repository = "CRAN" },
+    { name = "rappdirs", repository = "CRAN" },
+    { name = "rlang", repository = "CRAN" },
+    { name = "rmarkdown", repository = "CRAN" },
+    { name = "sass", repository = "CRAN" },
+    { name = "scales", repository = "CRAN" },
+    { name = "tibble", repository = "CRAN" },
+    { name = "tidyselect", repository = "CRAN" },
+    { name = "tinytex", repository = "CRAN" },
+    { name = "utf8", repository = "CRAN" },
+    { name = "vctrs", repository = "CRAN" },
+    { name = "viridisLite", repository = "CRAN" },
+    { name = "withr", repository = "CRAN" },
+    { name = "xfun", repository = "CRAN" }
+    { name = "yaml", repository = "CRAN" }
+]
