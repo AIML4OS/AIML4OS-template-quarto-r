@@ -4,6 +4,9 @@ echo "Executing the restore_environment.sh script"
 # Installing rv
 curl -sSL https://raw.githubusercontent.com/A2-ai/rv/refs/heads/main/scripts/install.sh | bash
 
+# Adding rv to the PATH
+source ~/.bashrc
+
 # Going into the Git repo
 cd ${MY_REPO}
 
