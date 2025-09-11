@@ -13,9 +13,6 @@ sh $MY_REPO/sspcloud/download_data.sh
 # Open project
 sh $MY_REPO/sspcloud/open_project.sh
 
-# Install dependencies
-sh $MY_REPO/sspcloud/restore_environment.sh
-
 # Open the exercise
 # $1 is an argument giving the path of the qmd exercise file within the Github repository
 export EXERCISE_PATH=$1
