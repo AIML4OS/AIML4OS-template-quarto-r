@@ -1,7 +1,23 @@
-
-
 # Introduction to `ggplot2`
 
+## Here is an example on how to import data
+
+```{r}
+#| warning: false
+#| eval: true
+library(readr)
+
+# Load data
+data <- readr::read_delim("/home/onyxia/work/data/DECES_COM_1019.csv", delim = ";")
+
+# Aggregate data
+data2 <- data |>
+  summarise(nb_deaths2019 = sum(DECESD19, na.rm = TRUE))
+
+```
+
+
+## Let's produce a plot
 
 Here is a code snippet to produce a beautiful plot done with `ggplot2`.
 
@@ -9,6 +25,7 @@ Here is a code snippet to produce a beautiful plot done with `ggplot2`.
 #| warning: false
 #| eval: true
 library(dplyr)
+library(readr)
 library(ggplot2)
 
 iris <- iris
