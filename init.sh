@@ -7,14 +7,14 @@ export MY_REPO=$(ls -d "/home/onyxia/work"/*/ | head -n 1 | xargs basename)
 
 echo /home/onyxia/work/$MY_REPO
 
-# Restore the environment
-# sh $MY_REPO/sspcloud/restore_environment.sh
-
 # Download data
 sh $MY_REPO/sspcloud/download_data.sh
 
 # Open project
 sh $MY_REPO/sspcloud/open_project.sh
+
+# Install dependencies
+sh $MY_REPO/sspcloud/restore_environment.sh
 
 # Ensure Quarto extension is up to date
 if ! command -v code-server &> /dev/null; then
