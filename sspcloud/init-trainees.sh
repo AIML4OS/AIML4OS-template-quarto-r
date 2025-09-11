@@ -22,4 +22,7 @@ export EXERCISE_PATH=$1
 sh $MY_REPO/sspcloud/open_exercise.sh
 
 # Ensure Quarto extension is up to date
+if ! command -v code-server &> /dev/null; then
+  curl -fsSL https://code-server.dev/install.sh | sh
+fi
 code-server --install-extension quarto.quarto
