@@ -1,6 +1,6 @@
 
 
-# Introduction to `ggspatial`
+# Introduction to `ggplot2`
 
 
 Here is a code snippet to produce a beautiful plot done with `ggplot2`.
