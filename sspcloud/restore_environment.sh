@@ -1,13 +1,14 @@
 #!/bin/bash
 echo "Executing the restore_environment.sh script"
 
-# GOing into the Git repo
-cd ${MY_REPO}
-
-echo $(pwd)
-
 # Install all dependencies in the system folder
-Rscript sspcloud/restore_environment.R
+echo \
+"
+setHook('rstudio.sessionInit', function(newSession) {
+ if (newSession)
+  {
+    renv::restore(prompt = FALSE)
+  }
+}, action = 'append')
 
-# Come back to home
-cd ..
+" >> /home/onyxia/work/${MY_REPO}/.Rprofile
