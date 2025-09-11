@@ -29,6 +29,8 @@ format:
     css: styles.css
     toc: true
 
+execute-dir: project
+
 filters:
   - export-metadata.lua
 
