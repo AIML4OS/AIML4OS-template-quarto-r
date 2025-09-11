@@ -19,4 +19,4 @@ fi
 code-server --install-extension quarto.quarto
 
 # open project
-sh $MY_REPO/sspcloud/open_project.sh
+# sh $MY_REPO/sspcloud/open_project.sh
