@@ -1,18 +1,25 @@
 #!/bin/bash
 
+export WORK_DIR=/home/onyxia/work
+
 # Get the name of the repo
 export MY_REPO=$(ls -d "/home/onyxia/work"/*/ | head -n 1 | xargs basename)
 
+echo /home/onyxia/work/$MY_REPO
+
 # Restore the environment
-sh $MY_REPO/sspcloud/restore_environment.sh
+# sh $MY_REPO/sspcloud/restore_environment.sh
 
 # Download data
 sh $MY_REPO/sspcloud/download_data.sh
 
-# Download the exercise
+# Open project
+sh $MY_REPO/sspcloud/open_project.sh
+
+# Open the exercise
 # $1 is an argument giving the path of the qmd exercise file within the Github repository
-export EXERCISE_PATH=exercise
-sh $MY_REPO/sspcloud/download_exercise.sh
+export EXERCISE_PATH=$1
+sh $MY_REPO/sspcloud/open_exercise.sh
 
 # Ensure Quarto extension is up to date
 code-server --install-extension quarto.quarto
