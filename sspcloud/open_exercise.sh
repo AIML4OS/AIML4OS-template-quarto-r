@@ -11,6 +11,7 @@ echo \
 setHook('rstudio.sessionInit', function(newSession) {
  if (newSession)
   {
+    install.packages('rstudioapi')
     rstudioapi::navigateToFile('${EXERCICE_FULL_PATH}')
   }
 }, action = 'append')
