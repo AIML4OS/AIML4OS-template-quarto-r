@@ -13,6 +13,11 @@ sh $MY_REPO/sspcloud/download_data.sh
 # Open project
 sh $MY_REPO/sspcloud/open_project.sh
 
+# Open the index
+# This prevents renv from dropping rstudioapi from the lockfile
+export EXERCISE_PATH=index.qmd
+sh $MY_REPO/sspcloud/open_exercise.sh
+
 # Ensure Quarto extension is up to date
 if ! command -v code-server &> /dev/null; then
   curl -fsSL https://code-server.dev/install.sh | sh
