@@ -15,4 +15,4 @@ sh $MY_REPO/sspcloud/download_data.sh
 code-server --install-extension quarto.quarto
 
 # open project
-# sh $MY_REPO/sspcloud/open_project.sh
+sh $MY_REPO/sspcloud/open_project.sh
