@@ -16,4 +16,4 @@ setHook('rstudio.sessionInit', function(newSession) {
   }
 }, action = 'append')
 
-" >> /home/onyxia/.Rprofile
+" >> /home/onyxia/work/${MY_REPO}/.Rprofile
