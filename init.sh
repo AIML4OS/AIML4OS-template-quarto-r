@@ -12,6 +12,10 @@ sh $MY_REPO/sspcloud/restore_environment.sh
 sh $MY_REPO/sspcloud/download_data.sh
 
 # Ensure Quarto extension is up to date
+if ! command -v code-server &> /dev/null; then
+  # Install code-server if necessary
+  curl -fsSL https://code-server.dev/install.sh | sh
+fi
 code-server --install-extension quarto.quarto
 
 # open project
