@@ -8,31 +8,13 @@ Here is a code snippet to produce a beautiful plot done with `ggplot2`.
 ```{r}
 #| warning: false
 #| eval: true
+library(dplyr)
 library(ggplot2)
-library(ggspatial)
-load_longlake_data()
 
-ggplot() +
-  # loads background map tiles from a tile source
-  annotation_map_tile(zoomin = -1) +
-  
-  # annotation_spatial() layers don't train the scales, so data stays central
-  annotation_spatial(longlake_roadsdf, size = 2, col = "black") +
-  annotation_spatial(longlake_roadsdf, size = 1.6, col = "white") +
+iris <- iris
 
-  # raster layers train scales and get projected automatically
-  layer_spatial(longlake_depth_raster, aes(colour = after_stat(band1))) +
-  # make no data values transparent
-  scale_fill_viridis_c(na.value = NA) +
-  
-  # layer_spatial trains the scales
-  layer_spatial(longlake_depthdf, aes(fill = DEPTH_M)) +
-  
-  # spatial-aware automagic scale bar
-  annotation_scale(location = "tl") +
-
-  # spatial-aware automagic north arrow
-  annotation_north_arrow(location = "br", which_north = "true")
+ggplot(iris) +
+  geom_point(aes(x = Sepal.Length, y = Petal.Length, color = Species))
 ```
 
 And here is the amazing result.
@@ -40,31 +22,14 @@ And here is the amazing result.
 ```{r}
 #| warning: false
 #| echo: false
+library(dplyr)
 library(ggplot2)
-library(ggspatial)
-load_longlake_data()
 
-ggplot() +
-  # loads background map tiles from a tile source
-  annotation_map_tile(zoomin = -1) +
-  
-  # annotation_spatial() layers don't train the scales, so data stays central
-  annotation_spatial(longlake_roadsdf, size = 2, col = "black") +
-  annotation_spatial(longlake_roadsdf, size = 1.6, col = "white") +
+iris <- iris
 
-  # raster layers train scales and get projected automatically
-  layer_spatial(longlake_depth_raster, aes(colour = after_stat(band1))) +
-  # make no data values transparent
-  scale_fill_viridis_c(na.value = NA) +
-  
-  # layer_spatial trains the scales
-  layer_spatial(longlake_depthdf, aes(fill = DEPTH_M)) +
-  
-  # spatial-aware automagic scale bar
-  annotation_scale(location = "tl") +
+ggplot(iris) +
+  geom_point(aes(x = Sepal.Length, y = Petal.Length, color = Species))
 
-  # spatial-aware automagic north arrow
-  annotation_north_arrow(location = "br", which_north = "true")
 ```
 
 # Conclusion
