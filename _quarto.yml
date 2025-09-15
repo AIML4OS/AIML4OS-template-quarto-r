@@ -7,7 +7,7 @@ project:
 website:
   page-navigation: true
   title: "Introduction to `ggplot2`"
-  site-url: "https://github.com/AIML4OS/AIML4OS-template-quarto-r"
+  site-url: "https://AIML4OS.github.io/AIML4OS-template-quarto-r/"
   repo-url: "https://github.com/AIML4OS/AIML4OS-template-quarto-r"
   repo-actions: [edit, source, issue]
   # favicon: images/Template2.png
