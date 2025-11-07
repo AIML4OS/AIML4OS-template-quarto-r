@@ -1,5 +1,6 @@
 project:
   type: website
+  execute-dir: project
   render: # Add HERE new chapters (but not the interactive qmd files)
     - index.qmd
     - chapters/chapter1.qmd
