@@ -17,8 +17,6 @@ website:
   repo-actions: [edit, source, issue]
   # favicon: images/Template2.png
   sidebar:
-    logo: resources/profile/main3.png
-    style: "docked"
     search: true
     contents: # Add HERE new chapters (but not the interactive qmd files)
       - href: index.qmd
@@ -30,7 +28,6 @@ format:
   html:
     theme:
       - cosmo
-      - brand
     css: styles.css
     toc: true
 
