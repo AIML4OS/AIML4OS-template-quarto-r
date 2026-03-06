@@ -1,5 +1,6 @@
 ---
 title: "Template for WP6 training material" # See below for multilingual resource
+format: html
 include-before-body:
   - text: <img src="resources/cover/main2.png" style="max-width:900px;width:100%">
 author:
@@ -100,4 +101,4 @@ See [this tutorial](https://aiml4os.github.io/training-material-starting-pack/).
 
 
 
-
+![Grant Agreement number: 101146355 — (AIML4OS — SMP-ESS-2023-AI-ML4OS-IBA)](images/eurostat_funding.png){style="max-width: 100%; height: auto;"}
